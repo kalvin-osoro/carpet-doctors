@@ -1,20 +1,14 @@
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/navigation/Navbar';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { PublicRoutes } from './components/routes';
 
-function App() {
+const  App = () => {
   return (
-    <div className="App">
-
-      <Router>
-      <Navbar />
-        <Routes >
-          <Route path='/' exact />
-        </Routes>     
-      </Router>
-      
-     {/* <h1>Finally!</h1> */}
-    </div>
+    
+    <Router>
+      <PublicRoutes />
+    </Router>
   );
 }
 
