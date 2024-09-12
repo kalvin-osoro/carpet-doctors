@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '../common/Button';
+// import { Button } from '../common/Button';
 
 import '../../Styles.css'
+import Button from '../common/Button';
 
 
 const Navbar = () => {
@@ -20,6 +21,9 @@ const Navbar = () => {
       setButton(true);
     }
   };
+  useEffect(() => {
+    showButton();
+  }, []);
 
   window.addEventListener('resize', showButton);
 
@@ -27,7 +31,7 @@ const Navbar = () => {
     <>
     <nav className='navbar'>
      <div className="navbar-container">
-         <Link to="/" className="navbar-logo">
+         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
              Carpet Doctors <i className='fab fa-typo3' />
  
          </Link>
@@ -37,31 +41,31 @@ const Navbar = () => {
 
          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
          <li className="nav-item">
-            <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
             
             Home
             </Link>
-          </li> <li className="nav-item">
+          </li>
+           <li className="nav-item">
             <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
             
             Services
             </Link>
-          </li> <li className="nav-item">
+          </li> 
+          <li className="nav-item">
             <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
             
             Products
             </Link>
           </li>
           <li className="nav-item">
-            <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
             
             Sign Up
             </Link>
-          </li>
-
-          {button && <Button buttonStyle='btn--outline'> SIGN UP</Button>}
+          </li>         
          </ul>
- 
+         {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} 
      </div>
     </nav>
     

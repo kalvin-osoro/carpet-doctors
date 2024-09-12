@@ -1,4 +1,4 @@
-import { Children } from 'react'
+import React from 'react'
 import '../../App.css'
 import '../../Styles.css'
 
@@ -9,7 +9,7 @@ const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
 
-export const Button = ({Children, type, onclick, buttonStyle, buttonSize}) => {
+ const Button = ({children, type, onclick, buttonStyle, buttonSize}) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) 
     ? buttonStyle
      : STYLES[0];
@@ -18,15 +18,17 @@ export const Button = ({Children, type, onclick, buttonStyle, buttonSize}) => {
      : SIZES[0];
 
      return (
-        <Link to='/sign-up' className='btn-mobile'>
+        <Link to='/' className='btn-mobile'>
 
             <button 
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onclick}
             type={type}
             >
-                {Children}
+                {children}
             </button>
         </Link>
      )
 };
+
+export default Button;
