@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../navigation/Navbar";
-import Footer from "../navigation/Footer";
 import Home from "../pages/Home";
+import Services from "../pages/Services";
+import Products from "../pages/Products";
+import SignUp from "../pages/SignUp";
 
 // import { Navbar } from "../Navbar";
 
@@ -12,7 +14,9 @@ const PublicRoutes = () => {
         <Routes>
           
             <Route path="/" element={ < Home />}/>
-            <Route path="/footer" element = { < Footer />} />
+            <Route path="/products" element={ < Products /> } />
+            <Route path="/services" element={ <Services /> } />
+            <Route path="/sign-up" element={ <SignUp /> } />            
         </Routes>
     )
 }

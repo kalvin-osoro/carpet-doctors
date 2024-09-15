@@ -32,7 +32,9 @@ const Navbar = () => {
     <nav className='navbar'>
      <div className="navbar-container">
          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-             Carpet Doctors <i className='fab fa-typo3' />
+             Carpet Doctors
+              {/* <i className='fab fa-typo3' /> */}
+             <img className='fab' src="/images/cd.png" alt="" />
  
          </Link>
          <div className="menu-icon" onClick={handleClick}>

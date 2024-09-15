@@ -6,7 +6,7 @@ import Button from './common/Button'
 const HeroSection = () => {
   return (
     <div className='hero-container'>
-        <video src="videos/video-2.mp4" autoPlay loop muted />
+        {/* <video src="videos/video-2.mp4" autoPlay loop muted /> */}
         
             <h1>GET YOUR CARPET CLEAN!</h1>
             <p>What are you waiting for</p>
