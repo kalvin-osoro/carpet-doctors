@@ -1,0 +1,91 @@
+/* General Page Styles */
+.products-page {
+    padding: 2rem;
+    margin-top: 0; /* Remove extra space on top */
+    background: #f9f9f9;
+    color: #333;
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+  }
+  
+  /* Header Styles */
+  .products {
+    text-align: center;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  /* Product Detail Styles */
+  .product-detail {
+    margin: 0 auto; /* Center the content */
+    max-width: 900px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in total width/height */
+  }
+  
+  /* Product Info Styles */
+  .product-info h3 {
+    color: #444;
+    margin-top: 1rem;
+  }
+  
+  .product-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .product-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .product-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .product-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Testimonials Styles */
+  .testimonials {
+    margin: 1.5rem 0;
+  }
+  
+  .testimonials blockquote {
+    border-left: 4px solid #007bff;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+    font-style: italic;
+  }
+  
+  /* FAQ Styles */
+  .faq {
+    margin-top: 1.5rem;
+  }
+  
+  .faq h4 {
+    margin-bottom: 0.5rem;
+    color: #007bff;
+  }
+  
+  .faq p {
+    margin: 0 0 1rem;
+  }
+
+  
+  .product-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Optional: Add some padding around the image */
+  }
+  
+  .product-image {
+    width: 732px;
+    height: 468px;
+    object-fit: cover; /* This will ensure the image fits while keeping its aspect ratio */
+  }
+  
