@@ -3,12 +3,10 @@ import { Link } from 'react-router-dom'
 // import { Button } from '../common/Button';
 
 import '../../Styles.css'
-import Button from '../common/Button';
-
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [ setButton] = useState(true);
   const handleClick = () => setClick(!click);
 
   const closeMobileMenu = () => setClick(false);
@@ -63,7 +61,7 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to='/prices' className='nav-links' onClick={closeMobileMenu}>
             
-            Prices
+            Affordable Prices 
             </Link>
           </li>
           {/* <li className="nav-item">
