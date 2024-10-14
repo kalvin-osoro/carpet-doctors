@@ -11,21 +11,21 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
 
-  const showButton = () => {
-    if(window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-  useEffect(() => {
-    showButton();
-    window.addEventListener('resize', showButton);
+  // const showButton = () => {
+  //   if(window.innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
+  //   }
+  // };
+  // useEffect(() => {
+  //   showButton();
+  //   window.addEventListener('resize', showButton);
 
-    return () => {
-      window.addEventListener('resize', showButton);
-    };
-  }, [showButton]);
+  //   return () => {
+  //     window.addEventListener('resize', showButton);
+  //   };
+  // }, [showButton]);
 
   // window.addEventListener('resize', showButton);
 
