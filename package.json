@@ -16,9 +16,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "set DISABLE_ESLINT_PLUGIN=true && react-scripts start",
+    "build": "set DISABLE_ESLINT_PLUGIN=true && react-scripts build",
+    "test": "set DISABLE_ESLINT_PLUGIN=true && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
   }
 }
