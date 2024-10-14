@@ -1,5 +1,6 @@
 {
-  "name": "carpet-king",
+  "name": "carpetdoctors",
+  "homepage": "https://carpetdoctors.co.ke/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
