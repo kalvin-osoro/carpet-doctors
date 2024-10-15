@@ -37,7 +37,7 @@ const Navbar = () => {
             </li> */}
             <li className="nav-item">
               <Link to='/prices' className='nav-links' onClick={closeMobileMenu}>
-                Affordable Prices
+                Prices
               </Link>
             </li>
           </ul>
