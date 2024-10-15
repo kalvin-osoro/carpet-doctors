@@ -33,12 +33,33 @@ const Footer = () => {
             <Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
               <i className="fab fa-facebook-f" />
             </Link>
-            <Link className="social-icon-link instagram" to="/" target="_blank" aria-label="Instagram">
+            {/* <Link className="social-icon-link instagram" to="/https://www.instagram.com/carpetdoc2024?igsh=MTc5cXYxb2FhOGdvMw==" target="_blank" aria-label="Instagram">
               <i className="fab fa-instagram" />
+            </Link> */}
+            <a
+            className="social-icon-link instagram"
+            href="https://www.instagram.com/carpetdoc2024?igsh=MTc5cXYxb2FhOGdvMw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i className="fab fa-instagram" />
+          </a>
+          <a
+          className="social-icon-link tiktok"
+          href="https://www.tiktok.com/@carpet.doctors?_t=8qYFmyMAPAb&_r=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <i className="fab fa-tiktok" />
+        </a>
+            {/* <Link className="social-icon-link tiktok" to="/https://www.tiktok.com/@carpet.doctors?_t=8qYFmyMAPAb&_r=1" target="_blank" aria-label="Instagram">
+              <i className="fab fa-tiktok" />
             </Link>
             <Link className="social-icon-link twitter" to="/" target="_blank" aria-label="Twitter">
               <i className="fab fa-twitter" />
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

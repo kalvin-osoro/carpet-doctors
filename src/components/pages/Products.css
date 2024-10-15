@@ -3,25 +3,25 @@
     padding: 2rem;
     margin-top: 0; /* Remove extra space on top */
     background: #f9f9f9;
-    color: #333;
+    color: #7f8c8d;
     box-sizing: border-box; /* Ensure padding is included in total width/height */
   }
   
   /* Header Styles */
   .products {
     text-align: center;
-    color: #222;
+    color: #7f8c8d;
     margin-bottom: 1rem;
   }
   
   /* Product Detail Styles */
   .product-detail {
     margin: 0 auto; /* Center the content */
-    max-width: 900px;
-    background: #fff;
+    max-width: 100%;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(52, 50, 50, 0.1);
     box-sizing: border-box; /* Ensure padding is included in total width/height */
   }
   

@@ -56,6 +56,7 @@ const Products = () => {
             </div>
 
             <h3>Pricing</h3>
+            {/* <p>Small 5X8 ft: </p> */}
             <p>
               - 1 Liter Bottle: $19.99<br />
               - 5 Liter Bottle: $89.99<br />

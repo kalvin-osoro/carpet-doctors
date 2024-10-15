@@ -60,21 +60,23 @@
     transform: scale(1.1); /* Optional: Slight zoom effect on hover */
   }
 
+
   
   .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
   /* background: #e0e071;  yellow */
   background: #fff100;
   height: 80px;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 0 20px; /* Add padding for mobile responsiveness */
 }
-
 .navbar-container {
   display: flex;
   justify-content: center;
@@ -85,13 +87,22 @@
 
 .navbar-logo {
   color: #fff;
-  justify-self: start;
-  margin-left: 20px;
+  /* justify-self: start; */
+  top: 0;
+  left: 0;
+  /* margin-left: -10px;
+  margin-top: -50px; */
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
   display: flex;
   align-items: center;
+}
+
+.logo-img {
+  height: 60px;  /* Adjust height to fit the navbar */
+  width: auto;   /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure image scales properly */
 }
 
 .fa-typo3 {
@@ -100,14 +111,17 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  /* display: grid; */
+  display: flex;
+  /* grid-template-columns: repeat(4, auto); */
+  /* grid-gap: 10px; */
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
+  /* width: 60vw; */
+  width: auto;
+  /* justify-content: end; */
+  /* margin-right: 2rem; */
+  margin-right: 0;
 }
 
 .nav-item {
@@ -140,9 +154,22 @@
   display: none;
 }
 
+/* Mobile Styles */
 @media screen and (max-width: 960px) {
+
+  .navbar-logo {
+    color: #fff;
+    margin-left: -10px;
+    margin-top: -50px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
   .NavbarItems {
-    position: relative;
+    position: absolute;
   }
 
   .nav-menu {
@@ -152,24 +179,30 @@
     height: 90vh;
     position: absolute;
     top: 80px;
-    left: -100%;
-    opacity: 1;
+    /* left: -100%; */
+    left: 0;
+    /* opacity: 1; */
+    opacity: 0;
     transition: all 0.5s ease;
+
+    z-index: 1; /* Stack on top */
+    background: #242222;
   }
 
   .nav-menu.active {
-    background: #242222;
+    /* background: #242222; */
     left: 0;
     opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
+    /* transition: all 0.5s ease;
+    z-index: 1; */
   }
 
   .nav-links {
     text-align: center;
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding: 1rem;
     width: 100%;
-    display: table;
+    /* display: table; */
   }
 
   .nav-links:hover {
@@ -187,12 +220,12 @@
 
   .menu-icon {
     display: block;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    cursor: pointer;
+    cursor: pointer; */
   }
 
   .fa-times {
@@ -236,7 +269,7 @@
 
   .hero-container {
     
-    background: url('/src/images/carousel-1.jpeg')
+    background: url('/src/images/carosel-gp.jpeg')
     center center no-repeat;
     /* background: url('/images/img-home.jpg') 
     center center/cover no-repeat; */
@@ -244,6 +277,7 @@
     width: 100%; */
     height: 800px;
     width: 100%;
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,7 +315,10 @@
 
   @media screen and (max-width: 768px) {
     .hero-container {
-        background-size: contain; /* Ensures the image fits without cutting on smaller screens */
+      /* background: url('/src/images/carosel-transformed.jpeg'); */
+        background-size: cover; /* Ensures the image fits without cutting on smaller screens */
+        /* width: 960px;
+        height: 800px; */
     }
 }
 

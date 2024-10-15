@@ -22,7 +22,7 @@ const Cards = () => {
         <div className="cards__wrapper">
           <ul className="cards__items">
             <CardItem
-              src="images/side.jpeg"
+              src="images/side-hd.png"
               text="Quality Carpet Cleaning Services"
               label="Same day pickup"
               path="/services"
@@ -46,14 +46,14 @@ const Cards = () => {
               paragraph="Perfect for high-traffic areas and adventurous environments, our carpet cleaning solutions are designed to handle heavy use and wear. We offer robust cleaning and maintenance options to keep your carpets looking great, no matter how busy your space may be."
             />
             <CardItem
-              src="images/prices.jpeg"
+              src="images/reliable 2.jpeg"
               text="Reliable Carpet Maintenance"
               label="Reliable"
               path="/services"
               paragraph="Count on us for reliable carpet maintenance services that extend the life of your carpets. Our team provides consistent, high-quality care, ensuring that your carpets stay clean and well-maintained throughout their lifespan."
             />
             <CardItem
-              src="images/cd-3.jpg"
+              src="images/customer-service.jpeg"
               text="Customer-Focused Service"
               label="Customer Service"
               path="/customer-service"

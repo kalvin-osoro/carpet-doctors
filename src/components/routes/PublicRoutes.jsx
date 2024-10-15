@@ -14,7 +14,7 @@ const PublicRoutes = () => {
         <Routes>
           
             <Route path="/" element={ < Home />}/>
-            <Route path="/products" element={ < Products /> } />
+            {/* <Route path="/products" element={ < Products /> } /> */}
             <Route path="/services" element={ <Services /> } />
             <Route path="/prices" element={ <Prices /> } />
 
