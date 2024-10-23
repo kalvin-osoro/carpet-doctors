@@ -40,10 +40,10 @@ const Cards = () => {
           <ul className="cards__items">
             <CardItem
               src="images/hanger 2.jpeg"
-              text="Adventure-Ready Carpet Solutions"
-              label="Adventure"
+              text="Expert Carpet Care Solutions"
+              label="Professional Service"
               path="/services"
-              paragraph="Perfect for high-traffic areas and adventurous environments, our carpet cleaning solutions are designed to handle heavy use and wear. We offer robust cleaning and maintenance options to keep your carpets looking great, no matter how busy your space may be."
+              paragraph="Our professional carpet cleaning services are tailored to meet the highest standards of cleanliness and care. Whether for residential or commercial spaces, we provide deep cleaning solutions that extend the life of your carpets, enhancing their appearance and maintaining a healthy indoor environment."
             />
             <CardItem
               src="images/reliable 2.jpeg"
