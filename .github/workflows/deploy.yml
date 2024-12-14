@@ -21,6 +21,9 @@ jobs:
       run: |
         npm install
         npm run build
+
+    - name: Remove sync state file
+      run: rm -f .ftp-deploy-sync-state.json
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
