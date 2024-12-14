@@ -8,8 +8,9 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section about">
           <h2 classname = "contact-section">About Us</h2>
-          <p>
-            Carpet Doctors is an Automated carpet cleaning company offering professional carpet cleaning services for same day pickup and delivery.
+          <p>           
+
+            We are a Leading fully automated carpet cleaning company offering same day  pickup and delivery services. Free delivery call us on 0748 086 676.
           </p>
         </div>
 
