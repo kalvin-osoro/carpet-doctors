@@ -25,12 +25,15 @@ jobs:
     - name: Remove sync state file
       run: rm -f .ftp-deploy-sync-state.json
     
-    - name: 📂 Sync files to public_html
+    - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.GIT_CPANEL_REACT_SERVER }}
         username: ${{ secrets.GIT_CPANEL_REACT_USER }}
         password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
         protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
-        clean: true 
-        overwrite: true
+        local-dir: ./build/
+        server-dir: ./
+        clean: true  # This will ensure files are replaced
+        overwrite: true # Ensures existing files are replaced with the new ones
+       
