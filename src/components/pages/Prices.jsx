@@ -7,7 +7,7 @@ const Products = () => {
     <Layout>
 
         <div className="product-image-wrapper">
-        <img src="images/prices-2.jpeg" alt="Product" className="product-image" />
+        <img src="images/prices-2.jpeg" alt="Automated carpet cleaning services in Nairobi on Kamiti Road" className="product-image" />
 
         </div>
 
