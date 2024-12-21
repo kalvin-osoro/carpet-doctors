@@ -1,7 +1,5 @@
 import React from 'react'
 import '../Styles.css'
-import { Button } from '@mui/material'
-// import Button from './common/Button'
 
 const HeroSection = () => {
   return (

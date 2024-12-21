@@ -32,8 +32,8 @@ jobs:
         username: ${{ secrets.GIT_CPANEL_REACT_USER }}
         password: ${{ secrets.GIT_CPANEL_REACT_PWD }}
         protocol: ${{ secrets.GIT_CPANEL_REACT_PROTOCOL }}
-        local-dir: ./build/
-        server-dir: ./
-        clean: true  # This will ensure files are replaced
-        overwrite: true # Ensures existing files are replaced with the new ones
+        # local-dir: ./build/
+        # server-dir: ./
+        # clean: true  # This will ensure files are replaced
+        # overwrite: true # Ensures existing files are replaced with the new ones
        
