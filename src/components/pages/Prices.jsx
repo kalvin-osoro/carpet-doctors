@@ -2,7 +2,7 @@ import React from 'react';
 import './Products.css';
 import Layout from '../navigation/Layout';
 
-const Products = () => {
+const Prices = () => {
   return (
     <Layout>
 
@@ -15,4 +15,4 @@ const Products = () => {
 );
 };
 
-export default Products;
+export default Prices;

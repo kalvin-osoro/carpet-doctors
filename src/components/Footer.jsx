@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-section about">
-          <h2 classname = "contact-section">About Us</h2>
+          <h2 className = "contact-section">About Us</h2>
           <p>           
 
             We are a Leading fully automated carpet cleaning company offering same day  pickup and delivery services. Free delivery call us on 0748 086 676.

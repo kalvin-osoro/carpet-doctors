@@ -11,7 +11,7 @@ const Cards = () => {
       <div className="cards__paragraphs">
         <h2>Experience Exceptional Carpet Cleaning Services</h2>
         <p>
-          At Carpet Doctors, we are committed to providing top-notch cleaning solutions for your carpets, upholstery, and more. Our team of trained professionals uses state-of-the-art equipment and eco-friendly products to ensure your spaces are spotless and fresh. We pride ourselves on delivering prompt, efficient, and reliable service tailored to your specific needs.
+          At Carpet Doctors, we are committed to providing top-notch cleaning solutions for your carpets, upholstery, and more. Our team of trained professionals uses state-of-the-art equipment and eco-friendly products to ensure your carpets are spotless and fresh. We pride ourselves on delivering prompt, efficient, and reliable service tailored to your specific needs.
         </p>
         <p>
           Our services include deep cleaning, stain removal, and odor elimination. We offer flexible scheduling options and same-day pickup to accommodate your busy lifestyle. With our attention to detail and dedication to customer satisfaction, you can trust us to enhance the cleanliness and longevity of your carpets and upholstery.

@@ -64,7 +64,7 @@
   
   .navbar {
   /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
-  /* background: #e0e071;  yellow */
+  /* background: #e0e071;   */
   background: #fff100;
   height: 80px;
   display: flex;
@@ -79,10 +79,30 @@
 }
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   max-width: 1500px;
+  width: 100%;
+}
+
+
+.nav-menu { 
+  display: flex; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; 
+  justify-content: flex-end;  
+  margin-right: 20px;
+}
+
+.nav-menu.active {
+  /* background: #242222; */
+  left: 0;
+  opacity: 1;
+  /* transition: all 0.5s ease;
+  z-index: 1; */
 }
 
 .navbar-logo {
@@ -102,7 +122,7 @@
 .logo-img {
   height: 60px;  /* Adjust height to fit the navbar */
   width: auto;   /* Maintain aspect ratio */
-  object-fit: contain; /* Ensure image scales properly */
+  object-fit: contain; /* Ensure image scales   properly */
 }
 
 .fa-typo3 {
@@ -110,23 +130,6 @@
   font-size: 1.8rem;
 }
 
-.nav-menu {
-  /* display: grid; */
-  display: flex;
-  /* grid-template-columns: repeat(4, auto); */
-  /* grid-gap: 10px; */
-  list-style: none;
-  text-align: center;
-  /* width: 60vw; */
-  width: auto;
-  /* justify-content: end; */
-  /* margin-right: 2rem; */
-  margin-right: 0;
-}
-
-.nav-item {
-  height: 80px;
-}
 
 .nav-links {
   color: #fff;
@@ -269,13 +272,13 @@
 
   .hero-container {
     
-    background: url('/src/images/carosel-gp.jpeg')
-    center center no-repeat;
+    /* background: url('/src/images/carosel-gp.jpeg')
+    center center no-repeat; */
     /* background: url('/images/img-home.jpg') 
     center center/cover no-repeat; */
     /* height: 800px;
     width: 100%; */
-    height: 800px;
+    height: 600px;
     width: 100%;
     margin-left: 5px;
     display: flex;
@@ -308,6 +311,16 @@
   .hero-btns .btn {
     margin: 6px;
   }
+
+  .carousel-inner>.carousel-item>img, .carousel-inner>.carousel-item>a>img {
+    display: block;
+    height: 650px;
+    /* height: auto; */
+    max-width: 100%;
+    line-height: 1;
+    margin:auto;
+    width: 100%;
+    }
 
   .fa-play-circle {
     margin-left: 4px;
